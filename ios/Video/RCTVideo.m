@@ -1004,7 +1004,7 @@ static int const RCTVideoUnset = -1;
           [self addPlayerTimeObserver];
         }
         if (!wasPaused) {
-          [self setPaused:false];
+          //[self setPaused:false];
         }
         if(self.onVideoSeek) {
           self.onVideoSeek(@{@"currentTime": [NSNumber numberWithFloat:CMTimeGetSeconds(item.currentTime)],
